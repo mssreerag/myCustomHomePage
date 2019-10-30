@@ -14,6 +14,12 @@ body{
     justify-content: center;
     border: solid green 1px;
 }
+.rowFlex{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 .searchbox{
 /* height: 100vh; */
     align-self: center;
@@ -29,7 +35,7 @@ margin-bottom: 5vh;
     font-size: 30px;
     color: #333;
     width: 50vw;
-    height: 4vh;
+    height: 7vh;
     border: none;
     border-bottom: solid 1.5px #aa2211;
 }
@@ -42,10 +48,7 @@ margin-bottom: 5vh;
     
 }
   .iconRow{
-      width: 100%;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
+
     margin-bottom: 10vh;
     }
   .iconBox{
@@ -59,8 +62,8 @@ margin-bottom: 5vh;
   }
   .icon{
         opacity: 0.6;
-      width: 5vh;
-      height: 5vh;
+      width: 4.5vh;
+      height: 4.5vh;
       border-radius: 50%;
       margin-left: 1vw;
       margin-right: 1vw;
@@ -71,12 +74,19 @@ margin-bottom: 5vh;
   }
 
   .icon:hover{
-      box-shadow:0 0 2px black;
+      /* box-shadow:0 0 2px black; */
+    transform: scale(1.2);
+    margin-left: 20px;
+    margin-right: 20px;
       opacity: 1;
   }
   .youtube:hover{
     box-shadow:0 0 0;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    margin-left: 20px;
+    margin-right: 20px;
+
+
 }
   .iconContainer{
       /* overflow: hidden; */
@@ -85,3 +95,49 @@ margin-bottom: 5vh;
       background: crimson;
       /* transform: translateX(-100%); */
   }
+.clock{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555555;
+    font-weight: lighter;
+    font-size: 13vh;
+}
+.clockRow{
+    margin-top: -13vh;
+    margin-bottom: 10vh;
+}
+.toggle{
+    margin-bottom: -20vh;
+    margin-top: 20vh;
+    outline: none;
+
+}
+
+.toggleBtn{
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+    outline: none;
+
+    border-radius: 7px;
+    /* background-color: #aa2211; */
+}
+.toggleMoon{
+    display: visible;
+}
+.toggleSun{
+    display: none;
+}
+@media (max-aspect-ratio: 2/3) {
+
+    .flexCol{
+        /* background-color: red; */
+    }
+    .icon{
+        width: 3vh;
+        height: 3vh;
+    }
+    .clock{
+        font-size: 9vh;
+    }
+}
