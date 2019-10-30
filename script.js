@@ -20,7 +20,7 @@ function updateClock(clock){
 }
 function mode(){
 
-if(hour>19)
+if(hour>19 || hour<6)
 {
     console.log();
     night();
@@ -67,7 +67,9 @@ function day(){
     back.style.backgroundColor="#ffffff";
     search.style.backgroundColor="#ffffff";
     clockElement.style.color="#555555";
-    search.style.borderBottom="solid 2px #aa2211"
+    search.style.color="#333";
+
+    search.style.borderBottom="solid 1.5px #aa2211"
     clockElement.style.color="#555555";
     document.getElementById("toggleSun").style.display="none";
     document.getElementById("toggleMoon").style.display="inline";
