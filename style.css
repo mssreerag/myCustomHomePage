@@ -45,14 +45,14 @@ margin-bottom: 5vh;
 
     border-bottom: solid 3px #aa2211;
 
-    
+    /* **** icons **** */
 }
   .iconRow{
 
     margin-bottom: 10vh;
     }
   .iconBox{
-      width: 50vw;
+      width: 60vw;
     /* border: solid green 1px; */
     display: flex;
     flex-flow: row wrap;
@@ -62,39 +62,31 @@ margin-bottom: 5vh;
   }
   .icon{
         opacity: 0.6;
-      width: 4.5vh;
-      height: 4.5vh;
+      width: 8.5vh;
+      height: 5.5vh;
       border-radius: 50%;
-      margin-left: 1vw;
-      margin-right: 1vw;
+      margin-left: 0vw;
+      margin-right: 0vw;
+      padding-left: 1vw;
+      padding-right: 1vw;
+
       transition: all .2s ease;
   }
   .youtube{
       opacity: 1;
+      
   }
 
   .icon:hover{
       /* box-shadow:0 0 2px black; */
     transform: scale(1.2);
-    margin-left: 30px;
-    margin-right: 30px;
+    size: 40px 40-x;
+    width: 10vh;
+
       opacity: 1;
   }
-  .youtube:hover{
-    box-shadow:0 0 0;
-    transform: scale(1.2);
-    margin-left: 30px;
-    margin-right: 30px;
 
-
-}
-  .iconContainer{
-      /* overflow: hidden; */
-  }
-  .iconBack{
-      background: crimson;
-      /* transform: translateX(-100%); */
-  }
+  /* **** clock **** */
 .clock{
     font-family: Arial, Helvetica, sans-serif;
     color: #555555;
@@ -102,25 +94,24 @@ margin-bottom: 5vh;
     font-size: 13vh;
 }
 .clockRow{
+    margin-bottom: 10;
     margin-top: -13vh;
-    margin-bottom: 10vh;
 }
+
+/* **** Dark mode **** */
 .toggle{
     margin-bottom: -20vh;
     margin-top: 20vh;
     outline: none;
 
 }
-
 .toggleBtn{
     position: absolute;
 
     width: 18px;
     height: 18px;
     outline: none;
-
     border-radius: 7px;
-    /* background-color: #aa2211; */
 }
 .toggleMoon{
     display: visible;
@@ -128,16 +119,20 @@ margin-bottom: 5vh;
 .toggleSun{
     display: none;
 }
-@media (max-aspect-ratio: 2/3) {
 
-    .flexCol{
-        /* background-color: red; */
-    }
+/* **** For mobile view **** */
+@media (max-aspect-ratio: 2/3) {
     .icon{
-        width: 3vh;
+        width: 5vh;
         height: 3vh;
     }
     .clock{
         font-size: 9vh;
+    }
+    .search{
+        width: 70vw;
+    }
+    .iconBox{
+        width: 70vw;
     }
 }

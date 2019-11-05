@@ -14,10 +14,13 @@ function updateClock(clock){
     hour=parseInt(time[0]);
     minuets=parseInt(time[1]);
     clock.innerHTML=hour+':'+minuets;
+    
     if(flag2==0)
-    {mode();
-        flag2=1;}
-}
+    {
+        mode();
+        flag2=1;
+    }
+    }
 function mode(){
 
 if(hour>19 || hour<6)
@@ -55,6 +58,7 @@ function night(){
     back.style.backgroundColor="#666666";
     search.style.backgroundColor="#555555";
     search.style.color="#bbbbbb";
+    search.style.borderRadius="3px";
     search.style.borderBottom="none"
     clockElement.style.color="#bfbbbb";
     // document.getElementById("toggleBtn").style.outline="none";
