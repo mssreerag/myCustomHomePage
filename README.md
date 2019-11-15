@@ -1,2 +1,2 @@
 # myCustomHomePage
-custo home page for browsers
+Custom home page for browsers...
