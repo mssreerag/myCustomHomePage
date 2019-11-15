@@ -22,7 +22,7 @@ function updateClock(clock){
     }
     }
 function mode(){
-    if(minuets>=3 || hour<6)
+    if(hour>18 || hour<6)
     {
         console.log();
         night();
