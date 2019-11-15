@@ -13,8 +13,8 @@ function updateClock(clock){
     var time=timeSec.split(':')
     hour=parseInt(time[0]);
     minuets=parseInt(time[1]);
-    clock.innerHTML=hour+':'+minuets;
-    
+    clock.innerHTML=hour+':'+time[1];
+
     if(flag2==0)
     {
         mode();
@@ -22,21 +22,19 @@ function updateClock(clock){
     }
     }
 function mode(){
+    if(minuets>=3 || hour<6)
+    {
+        console.log();
+        night();
+        flag=1;
+    }
+        else
+    {
+        // console.log(hour);
 
-if(hour>19 || hour<6)
-{
-    console.log();
-    night();
-    flag=1;
-    
-}
-    else
-{
-    // console.log(hour);
-
-    day();
-    flag=0;
-}
+        day();
+        flag=0;
+    }
 
 }
 function dayNight(){

@@ -12,7 +12,7 @@ body{
     flex-flow: column wrap;
     align-content: space-between;
     justify-content: center;
-    border: solid green 1px;
+    /* border: solid green 1px; */
 }
 .rowFlex{
     width: 100%;
@@ -32,6 +32,7 @@ margin-bottom: 5vh;
 .search{
     position: relative;
     text-align: center;
+    
     font-size: 30px;
     color: #333;
     width: 50vw;
@@ -40,8 +41,11 @@ margin-bottom: 5vh;
     border-bottom: solid 1.5px #aa2211;
 }
 .search:focus{
+    
     outline: none;
     transition:all .2s ease;
+    font-family: 'Monda', sans-serif;
+
 
     border-bottom: solid 3px #aa2211;
 
@@ -52,7 +56,7 @@ margin-bottom: 5vh;
     margin-bottom: 10vh;
     }
   .iconBox{
-      width: 60vw;
+      width: 70vw;
     /* border: solid green 1px; */
     display: flex;
     flex-flow: row wrap;
@@ -61,6 +65,8 @@ margin-bottom: 5vh;
 
   }
   .icon{
+    user-select: none;
+
         opacity: 0.6;
       width: 8.5vh;
       height: 5.5vh;
@@ -81,24 +87,28 @@ margin-bottom: 5vh;
       /* box-shadow:0 0 2px black; */
     transform: scale(1.2);
     size: 40px 40-x;
-    width: 10vh;
+    width: 11vh;
 
       opacity: 1;
   }
 
   /* **** clock **** */
 .clock{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Titillium Web', sans-serif;
+    user-select: none;
+    
     color: #555555;
     font-weight: lighter;
     font-size: 13vh;
+
 }
 .clockRow{
-    margin-bottom: 10;
+    margin-bottom:10vh;
     margin-top: -13vh;
 }
 
-/* **** Dark mode **** */
+/* **** Dark mode Button**** */
 .toggle{
     margin-bottom: -20vh;
     margin-top: 20vh;
@@ -112,6 +122,8 @@ margin-bottom: 5vh;
     height: 18px;
     outline: none;
     border-radius: 7px;
+    user-select: none;
+
 }
 .toggleMoon{
     display: visible;
