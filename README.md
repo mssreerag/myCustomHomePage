@@ -1,5 +1,5 @@
 # myCustomHomePage
-### A minimal home page for browsers*
+### A minimal home page for browsers
 
 ![adipoli](https://raw.githubusercontent.com/mssreerag/myCustomHomePage/master/readme_images/light_mode.png)
 
