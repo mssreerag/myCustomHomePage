@@ -8,5 +8,6 @@
  <br/>
  -> Auto and manual change UI to dark mode.
 <br/>
+
 ![adipoli](https://raw.githubusercontent.com/mssreerag/myCustomHomePage/master/readme_images/dark_mode.png)
 
