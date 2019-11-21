@@ -63,6 +63,7 @@ function night(){
     // document.getElementById("toggleBtn").style.border="none";
     document.getElementById("toggleMoon").style.display="none";
     document.getElementById("toggleSun").style.display="inline";
+    document.getElementById("youtube").style.filter="grayscale(30%)";
 
 }
 function day(){
@@ -75,6 +76,7 @@ function day(){
     clockElement.style.color="#555555";
     document.getElementById("toggleSun").style.display="none";
     document.getElementById("toggleMoon").style.display="inline";
+    document.getElementById("youtube").style.filter="grayscale(0%)";
 
 
 
