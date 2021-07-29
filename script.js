@@ -2,6 +2,7 @@ var clockElement=document.getElementById("clock");
 let minuets,hour=0,flag=0,flag2=0;
 var back=document.getElementById("fullBack");
 var search=document.getElementById("searchBox");
+var backPlate=document.getElementById("backPlate");
 
 document.getElementById("searchBox").focus();
 setInterval(function(){updateClock(clockElement);},100);
@@ -53,7 +54,10 @@ function dayNight(){
 
 
 function night(){
-    back.style.backgroundColor="#666666";
+    // document.body.style.backgroundColor="lightblue"
+    // back.style.opacity="0.4";
+    backPlate.style.transform="translateY(0%)"
+
     search.style.backgroundColor="#555555";
     search.style.color="#bbbbbb";
     search.style.borderRadius="3px";
@@ -67,8 +71,10 @@ function night(){
 
 }
 function day(){
-    back.style.backgroundColor="#ffffff";
+    // back.style.backgroundPosition="right";
     search.style.backgroundColor="#ffffff";
+    backPlate.style.transform="translateY(100%)"
+
     clockElement.style.color="#555555";
     search.style.color="#333";
 

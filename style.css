@@ -1,39 +1,73 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    
-}
-.fontAwesome{ font-family: 'Helvetica', FontAwesome, sans-serif; }
+    transition: .5s ease-out;
+    /* background-position-x: 400px; */
+    background: transparent;
+    /* display: inline-block; */
+background-size: 200%;
+overflow-y:hidden
+    /* background: linear-gradient(to bottom, salmon 50%, lightblue 50%) top; */
 
-.flexCol{
+}
+
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+.animationTime{
+    transition: all .2s cubic-bezier(1,.01,.9,-0.11);
+
+}
+
+#backPlate{
+    position: absolute;
+    z-index: -1;
+    background: #666;
+    width: 100%;
+    height: 100%;
+    /* transform: translateY(100%); */
+    transition: all .3s cubic-bezier(1,.07,.53,.53);
+}
+.flexCol {
     height: 100vh;
     align-self: center;
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
     justify-content: center;
+
     /* border: solid green 1px; */
 }
-.rowFlex{
+
+#fullBack {
+    /* transition: .5s ease-out;
+    background-position-x: 400px;
+    background-size: 200%;
+    background: linear-gradient(to bottom, salmon 50%, lightblue 50%) top; */
+}
+
+.rowFlex {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-.searchbox{
-/* height: 100vh; */
+
+.searchbox {
+    /* height: 100vh; */
     align-self: center;
-display: flex;
-flex-flow: row wrap;
-justify-content: space-around;
-align-content: space-around;
-margin-bottom: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-bottom: 5vh;
 }
-.search{
+
+.search {
     position: relative;
     text-align: center;
     font-family: 'Monda', sans-serif;
-    
+
     font-size: 30px;
     color: #333;
     width: 50vw;
@@ -41,79 +75,86 @@ margin-bottom: 5vh;
     border: none;
     border-bottom: solid 1.5px #aa2211;
 }
-.search:focus{
-    
+
+.search:focus {
+
     outline: none;
-    transition:all .2s ease;
+    transition: all .2s ease;
     border-bottom: solid 3px #aa2211;
 }
-    /* **** icons **** */
 
-  .iconRow{
+/* **** icons **** */
+
+.iconRow {
 
     margin-bottom: 10vh;
-    }
-  .iconBox{
-      width: 70vw;
+}
+
+.iconBox {
+    width: 80vw;
     /* border: solid green 1px; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 
 
-  }
-  .icon{
+}
+
+.icon {
     user-select: none;
+    min-width: 40px;
+    opacity: 0.6;
+    width: 8.5vh;
+    height: 5.5vh;
+    border-radius: 50%;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 
-        opacity: 0.6;
-      width: 8.5vh;
-      height: 5.5vh;
-      border-radius: 50%;
-      margin-left: 0vw;
-      margin-right: 0vw;
-      padding-left: 1vw;
-      padding-right: 1vw;
+    transition: all .2s ease;
+}
 
-      transition: all .2s ease;
-  }
-  .youtube{
-      opacity: 1;
-      
-  }
+.youtube {
+    opacity: 1;
 
-  .icon:hover{
-      /* box-shadow:0 0 2px black; */
+}
+
+.icon:hover {
+    /* box-shadow:0 0 2px black; */
     transform: scale(1.2);
     size: 40px 40-x;
     width: 11vh;
 
-      opacity: 1;
-  }
+    opacity: 1;
+}
 
-  /* **** clock **** */
-.clock{
+/* **** clock **** */
+.clock {
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Titillium Web', sans-serif;
     user-select: none;
-    
+
     color: #555555;
     font-weight: lighter;
     font-size: 13vh;
 
 }
-.clockRow{
-    margin-bottom:10vh;
+
+.clockRow {
+    margin-bottom: 10vh;
     margin-top: -13vh;
 }
 
 /* **** Dark mode Button**** */
-.toggle{
+.toggle {
     margin-bottom: -20vh;
     margin-top: 20vh;
     outline: none;
 
 }
-.toggleBtn{
+
+.toggleBtn {
     position: absolute;
 
     width: 18px;
@@ -123,26 +164,31 @@ margin-bottom: 5vh;
     user-select: none;
 
 }
-.toggleMoon{
+
+.toggleMoon {
     display: visible;
 }
-.toggleSun{
+
+.toggleSun {
     display: none;
 }
 
 /* **** For mobile view **** */
 @media (max-aspect-ratio: 2/3) {
-    .icon{
+    .icon {
         width: 5vh;
         height: 3vh;
     }
-    .clock{
+
+    .clock {
         font-size: 9vh;
     }
-    .search{
+
+    .search {
         width: 70vw;
     }
-    .iconBox{
+
+    .iconBox {
         width: 70vw;
     }
 }
