@@ -69,6 +69,35 @@
 
     <script src="https://use.fontawesome.com/cd72f7a24b.js"></script>
     <script src="script.js"></script>
+    <script>
+        (function () {
+          var w = window, d = document, z = w.NeetoChat || {};
+          z.subdomain = "nothing";
+          z.chatApiKey = "Y6EbUxLqPI6VBU2F";
+          z.neetoChatBaseUrl = "https://nothing.neetochat.com";
+          z.neetoKbBaseUrl = "https://nothing.neetokb.com";
+          z.neetoDeskBaseUrl = "https://nothing.neetodesk.com";
+          w.NeetoChat = z;
+          var inserted = false;
+          function insertTag() {
+            if (inserted) return;
+            inserted = true;
+            var s = d.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://neeto-chat-widget-production-v1.s3.amazonaws.com/bundle-loader.js";
+            var x = d.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+          }
+          if (document.readyState != "loading") {
+            insertTag();
+          } else {
+            document.onreadystatechange = function () {
+              if (document.readyState != "loading") insertTag();
+            };
+          }
+        })();
+      </script>
 </body>
 
 </html>
